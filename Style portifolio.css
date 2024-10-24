@@ -1,0 +1,704 @@
+/* Fonte do Projeto Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Background da tela toda*/
+
+body {
+    width: 100%;
+    background-color: #fff;
+    overflow: scroll;
+    align-content: center;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/*Cabeçalho*/
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 0;
+    margin: 0 auto;
+}
+
+.cabecalho__fundo {
+    display: flex;
+    width: 100%;
+    height: 421px;
+    align-items: center;
+    position: absolute;
+    background-image: url('img/aquarela img superior.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.cabecalho__conteudo {
+    display: flex;
+    flex-direction: row;
+    /*width: 100%;*/
+    margin-top: 225px;
+    align-items: center;
+    z-index: 1;
+    padding: 1.5rem 1rem; /*Topo, Direita, Abaixo, Esquerda*/
+}
+
+.cabecalho__conteudo__foto {
+    width: 368px;
+    height: 368px;
+}
+
+.cabecalho__conteudo__dados {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /*747px*/
+    height: 201px;
+    margin-left: 16px;
+}
+
+.cabecalho__conteudo__dados__titulo {
+    width: 90%;
+    font-family: "Raleway", sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    color: #FD5668;
+    text-align: left;
+}
+
+.cabecalho__conteudo__dados__subtitulo {
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #FD5668;
+    text-align: left;
+    margin-top: 8px;   
+}
+
+/*Redes sociais links*/
+
+.social__links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 130px;
+    margin-top: 38px;
+}
+
+.social__links a {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #464646;
+    text-decoration: none;
+    padding: 4px;
+}
+
+.social__links a:hover {
+    color: #68BA65;
+}
+
+/*Sobre mim*/
+
+.sobremim {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.sobremim__titulo {
+    width: 100%;
+    height: 47px;
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #68BA65;
+    text-align: center;
+}
+
+.sobremim__texto {
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #464646;
+    margin-top: 24px;
+    margin-left: 152px; 
+    margin-right: 152px;
+    text-align: left;  
+}
+
+/*Hobbies*/
+
+a, ol, ul, li {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 130px;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.hobbies__titulo {
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #68BA65;  
+    text-align: center;
+    margin-left: 152px; 
+    margin-right: 152px;  
+}
+
+.hobbies__lista {
+    display: flex;
+    margin-top: 24px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    gap: 167px;
+    margin-left: 192px;
+    margin-right: 192px;
+}
+
+.hobbies__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+.hobbies__icone {
+    margin-top: 24px;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+}
+
+.hobbies__nome {
+    margin-top: 8px;    
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #464646;
+}
+
+/*Formação Acadêmica*/
+
+.formacao {
+    display: flex;
+    flex-direction: column;
+    margin-top: 72px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.formacao__fundo {
+    width: 100%;
+    height: 550px;
+    background-color: #D9EDD7;
+}
+
+.formacao__conteudo {
+    padding-top: 2rem;
+    padding-bottom: 2rem; 
+    margin: 0 auto;   
+}
+
+.formacao__titulo {
+    width: 100%;
+    margin-top: 20px;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #FD5668;
+    align-items: center;    
+}
+
+.formacao__lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+    width: 100%;
+    height: 355px;
+    align-items: center;
+    justify-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.formacao__lista li {
+    text-align: left;
+}
+
+.formacao__elemento {
+    width: 521px;
+    height: auto;
+}
+
+.formacao__instituicao {
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #3E3B3B;    
+}
+
+.formacao__descricao {
+    margin-top: 4px;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #3E3B3B;     
+}
+
+.formacao__datas {
+    margin-top: 4px;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #3E3B3B;    
+}
+
+/*Challenges Alura*/
+
+.challenge__alura {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    height: 344px;
+    padding-top: 2rem;
+}
+
+.challenge__alura__titulo {
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #68BA65;
+    text-align: center;   
+}
+
+.challenge__alura__conteudo {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 273px;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.challenge__alura__img {
+    max-width: 560px;
+    height: 273px;
+    margin-left: 0;
+}
+
+.challenge__subtitulo {
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #3E3B3B;
+    text-align: left;
+    width: 560px;
+    height: 28px;
+    margin-left: 16px;
+    margin-bottom: 24px;
+}
+
+.challenge__alura__dados a {
+    margin-top: 0;
+    margin-left: 0;
+    margin-left: 16px;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #3E3B3B;
+    text-align: left;
+}
+
+a:hover {
+    color: #68BA65;
+}
+
+/*Ferramentas utilizadas*/
+
+.ferramentas-utilizadas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 110px;
+    width: 560px;
+    height: auto;
+    padding: 0;
+}
+
+.ferramentas-utilizadas__texto {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #3E3B3B;
+    text-align: left;
+    margin-left: 16px;
+    margin-bottom: 24px;
+}
+
+.icone__container {
+    display: flex;
+    justify-content: center;
+    margin-left: 16px;
+    width: 560px;
+    gap: 74px;
+    padding: 0;
+    list-style: none;
+}
+
+.icone__elemento {
+    display: flex;
+    flex-direction: column;
+}
+
+.icone {
+    width: 32px;
+    height: 32px;
+}
+
+/*Contato*/
+
+.contato {
+    padding-top: 120px;
+}
+
+.contato,
+.contato__container {
+    margin: 0 auto;
+}
+
+.contato__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contato__conteudo__titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato__titulo {
+    font-family: "Raleway", sans-serif;
+    font-size: 68px;
+    font-weight: 700;
+    color: #FD5668; 
+}
+
+.formulario-container {
+    background-color: #fff;
+    font-family: "Raleway", sans-serif;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 70%;
+    padding: 2.5rem;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    color: #464646;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.campo input {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.botao {
+    width: 100%;
+    padding: 10px;
+    background-color: #FD5668;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.botao:hover {
+    background-color: #fc828e;
+    color: #963a3a;
+}
+
+/*Rodapé*/
+
+.rodape {
+    margin-top: 60px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    width: 100%;
+    height: 421px;
+}
+
+.rodape__fundo {
+    width: 100%;
+    height: 421px;
+    background-image: url('img/aquarela img inferior.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.rodape__retangulo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(104, 186, 101, 0.35);
+    /*display: flex;*/
+    align-items: center;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.rodape__texto {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: #3E3B3B;
+    z-index: 2;
+    padding: 2rem;
+}
+
+/*Responsividade*/
+
+@media screen and (max-width: 1200px){
+    .social__links {
+        gap: 32px;
+    }
+    
+    .hobbies__lista {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .formacao {
+        margin-top: 20px;
+    }
+
+    .formacao__fundo {
+        width: 100%;
+        height: 760px;
+        background-color: #D9EDD7;
+    }
+
+    .formacao__lista {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .challenge__alura {
+        padding-top: 1.5rem;
+        margin: 0 auto;
+    }
+
+    .challenge__alura__conteudo {
+        margin-top: 24px;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        z-index: 1;
+    }
+
+    .challenge__alura__dados {
+        text-align: justify;
+        margin: 0 auto;
+    }
+
+    .challenge__alura__img {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .ferramentas-utilizadas {
+        width: 100%;
+    }
+
+    .icone__container {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 90%;
+        gap: 62px;
+        padding: 0;
+    }
+
+    .contato, .contato__container {
+        margin: 0 auto;
+        margin-top: 12rem;
+    }
+
+    .contato__container {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+
+    .formulario-container {
+        margin: 0 auto;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .cabecalho__conteudo {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .cabecalho__conteudo__foto {
+        width: 60%;
+        height: 60%;
+    }
+
+    .contato__conteudo__titulo {
+        padding: 2rem;
+    }
+
+    .contato__titulo {
+        font-size: 52px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .cabecalho__conteudo__dados {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cabecalho__conteudo__dados {
+        align-items: center;
+    }
+
+    .cabecalho__conteudo__dados__titulo {
+        padding-top: 1rem;
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .cabecalho__conteudo__dados__subtitulo {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .sobremim__titulo {
+        font-size: 32px;
+    }
+
+    .sobremim__texto {
+        font-size: 20px;
+    }
+
+    .hobbies__titulo {
+        font-size: 32px;
+        margin: 0 auto;
+    }
+
+    .formacao__titulo {
+        font-size: 32px;
+    }
+
+    .formacao__lista {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .formacao__elemento {
+        width: 100%;
+        height: auto;
+    }
+
+    .challenge__alura__titulo {
+        font-size: 32px;
+    }
+
+    .challenge__subtitulo {
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .sobremim__titulo {
+        margin-top: 40px;
+    }
+
+    .sobremim__texto {
+        width: 80%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hobbies {
+        height: max-content;
+    }
+
+    .hobbies__lista {
+        gap: 40px;
+        padding-top: 1rem;
+    }
+
+    .formacao__fundo {
+        width: 100%;
+        height: 860px;
+        background-color: #D9EDD7;
+    }
+
+    .challenge__alura__img {
+        width: 90%;
+    }
+
+    .social__links {
+        gap: 16px;
+    }
+    
+}
